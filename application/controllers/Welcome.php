@@ -28,7 +28,18 @@ class Welcome extends CI_Controller {
 	  
 	if ($Impar%2 != 0)
 	{
-		while<	
+		
+		for ($var=$Impar; $var > 0; $var--)
+		{
+			$num;
+			while($num <= $Impar)
+			{
+				echo "*";
+				$num--;
+			}
+			$var++;
+		}
+		
 
 	}
 	else if  ($Impar%2 == 0)
