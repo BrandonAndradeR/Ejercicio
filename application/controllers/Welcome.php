@@ -25,20 +25,30 @@ class Welcome extends CI_Controller {
 	public function Other()
 	{
 		$Impar=$_POST['NumImpar'];
-	  
+	  $h=$Impar/2;
 	if ($Impar%2 != 0)
 	{
 		
-		for ($var=$Impar; $var > 0; $var--)
-		{
-			$num;
-			while($num <= $Impar)
+		for ($b = $h +1; $b > 0; $b-=1)
 			{
-				echo "*";
-				$num--;
+				for ($a = $h - $b; $a > 0; $a-=1)
+				{
+		
+					echo  " * ";
+				}
+		
+			echo "<br>";
 			}
-			$var++;
-		}
+			for ($b=0; $b < $h ; $b++)
+			{
+				for ($a=$b; $a < $h ; $a++)
+				{
+		
+					echo  " * ";
+		
+				}
+				echo "<br>";
+			}
 		
 
 	}
@@ -50,6 +60,6 @@ class Welcome extends CI_Controller {
 
 	<?php
 	}
-		
 	}
+	
 }
